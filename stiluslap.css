@@ -1,0 +1,347 @@
+* {box-sizing: border-box;}
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    justify-content: center;
+    font-size: 28pt;
+}
+p {
+    padding: 10px;
+
+}
+img {
+    max-width:100%;
+    height:auto;
+}
+div {
+    background-image: url("kepek/hatterkep.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+article, section, aside.ismerteto {
+    background-color: #E0DB35;
+    text-align: justify; /*sorkizárt*/
+    /*border-radius: 15px;*/
+}
+a {
+    color: #1E8EE4;
+}
+
+/*header*/
+
+header {
+    padding: 5px;
+    margin: 0;
+    background-color: #E5A51C;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    border-bottom: 5px solid #BB8527;
+}
+header h1 {
+    padding: 10px 0;
+    flex: 100%; /* % miatt a flex-basist (elem kezdeti hosszát) is írhattam volna */
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Menü*/
+
+nav {
+    padding: 0;
+    flex: 1 1 90%;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav li a {
+    display: block;
+    padding: 10px;
+    margin: 10px 15px;
+    font-size: 20pt;
+    text-decoration: none; /*eltüntette a linkek aláhúzását*/
+    background-color: #2FDE48;
+    border-radius: 10px;
+    text-align: center;
+}
+nav li a:hover, #current a:hover {
+    background-color: #1BAF3E;
+    color: #EDECBE;
+}
+nav li a:link /*a nav-ban és az li-ben lévő link stílusa*/ {
+    background-color: #b45f38;
+    color: #EDECBE;
+}
+li#current a{
+    background-color: #f86c15;
+    color: #EDECBE;
+}
+
+/*Aside tag formázása*/
+
+aside {
+    background-size: cover;
+    background-attachment: fixed;
+}
+aside {
+    flex: 1 1 90%;
+}
+aside ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+aside ul a{
+    display: block;
+    padding: 10px;
+    margin: 10px 15px; /*először fent-lent, majd bal-jobb (külső margó)*/
+    font-size: 20pt;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none; /*eltüntette a linkek aláhúzását*/
+    background-color: #2FDE48;
+    color: #356BF4;
+    border-radius: 10px; /*mindenhol 10px a lekerekítés*/
+    text-align: center;
+}
+
+article.leiras {
+    flex-basis: 90%;
+    margin: 10px 10px 25px 10px; /*sorrend: fent, jobb, lent, bal*/
+}
+article.leiras p {
+    margin: 5px;
+    font-style: italic;
+    font-size: 14pt;
+}
+article.leiras h3 {
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16pt;
+}
+img.leiras_kep {
+    float: left;
+    height: 300px;
+    border-radius: 10px;
+    margin: 10px;
+}
+a:link.leiras_link {
+    text-decoration: none;
+}
+article:hover.leiras {
+    transform: scale(1.08);
+}
+article.leiras_cim {
+    margin: 40px 0 10px 0;
+    flex-basis: 90%;
+}
+
+/*Világbajnokok*/
+
+figure.flex {
+    flex: 1 1 90%;
+    margin: 15px;
+    padding: 0;
+}
+img.versenyzo_kep {
+    width: 100%;
+    border-radius: 10px;
+}
+h3.ismerteto_cimsor {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16pt;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.ismerteto {
+    flex: 1 1 90%;
+    margin: 10px 8px;
+    padding: 0;
+}
+.ismerteto ul {
+    list-style-type: square;
+    font-size: 14pt;
+    padding-right: 15px;
+}
+section, article.ismerteto p {
+    font-size: 14pt;
+}
+hr.vb_szeparalo {
+    height: 5pt;
+    width: 100%;
+    background-color: rgba(218, 231, 225, 0.2);
+}
+
+/*Kvíz*/
+
+article.game {
+    flex: 1 1 90%;
+    text-align: justify;
+    margin: 15px;
+    padding: 10px;
+}
+article.game p {
+    flex: 1 1 90%;
+    text-align: justify;
+    margin: 5px 2px;
+    padding: 10px;
+}
+h3.teszt {
+    text-align: center;
+    font-size: 18pt;
+    font-family: 'Roboto', sans-serif;
+    background-color: #2b96f3;
+    color: #debc9e;
+    letter-spacing: 3px; /*betűk közötti tér --> betűköz*/
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+input, select {
+    border: 3px solid blue;
+    border-radius: 7px;
+    margin: 5px;
+    padding: 2px 3px;
+    background-color: #aafbfb;
+}
+hr.elvalaszto {
+    width: 100%;
+    height: 3px;
+    background-color: rgba(218, 231, 225, 0.2);
+}
+input#negyedik_jo, input#gyozelem_103, input#Max_Verstappen, input#ruha_szin, input#valaszto, input#rai {
+    margin-bottom: 25px;
+}
+input.gomb {
+    padding: 5px 7px;
+}
+input:hover.gomb {
+    background-color: blue;
+    color: white;
+}
+
+label.error {
+    color: #2b96f3;
+}
+
+/*Galéria*/
+
+.galleria {
+    margin: auto;
+    width: 90vw;
+    height: 90vw;
+}
+.versenyzok {
+    flex-basis: 90%;
+}
+article.versenyzok h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24pt;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+/*Lábléc*/
+
+footer {
+    padding: 3px 3px 10px 3px;
+    margin: 0;
+    background-color: #E5A51C;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+}
+
+
+@media all and (min-width: 600px) {
+    /*tablet nézet*/
+    nav {
+        flex-basis: 20%;
+    }
+    nav ul {
+        display: flex; /*sorba rakja a menüpontokat*/
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    article {flex-basis: 70%;}
+    aside.ismerteto nav ul {
+        display: block;
+        flex-direction: column;
+        flex-wrap: wrap;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    article.leiras {flex-basis: 70%;}
+    article.leiras_cim {flex-basis: 70%;}
+
+    figure.versenyzo_kep {flex-basis: 20%;}
+    article.ismerteto {flex-basis: 60%;}
+    section.ismerteto {flex-basis: 40%;}
+    aside.ismerteto {flex-basis: 90%;}
+
+    article.game {flex-basis: 90%;}
+
+}
+
+@media all and (min-width: 768px) {
+    /*számítógépes nézet*/
+    nav {
+        flex-basis: 20%;
+    }
+    nav ul {
+        display: flex; /*sorba rakja a menüpontokat*/
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    article {
+        flex-basis: 70%;
+    }
+    figure.flex {
+        flex-basis: 30%;
+    }
+    aside ul a {
+        flex-basis: 50%;
+        display: flex; /*sorba rakja a menüpontokat*/
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    article.leiras {flex-basis: 55%;}
+    article.leiras_cim {flex-basis: 55%;}
+
+    article {flex-basis: 70%;}
+    section.ismerteto ul {flex-basis: 40%;}
+
+    article.game {flex-basis: 90%;}
+
+    .galleria{
+        margin: auto;
+        width: 45vw;
+        height: 45vw;
+    }
+}
+

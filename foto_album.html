@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Metaelemek -->
+    <meta name="description" content="Formula 1-es világbajnokok">
+    <meta name="author" content="Mikics Tamás">
+    <meta name="copyright" content="Oktatási célra">
+
+    <!-- Külső stíluslap -->
+    <link rel="stylesheet" href="stiluslap.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="kepek/formula_1_favicon.jpg">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+
+    <title>Formula 1-es világbajnokok</title>
+    <script src="jquery/jquery-3.7.1.js"></script>
+    <script src="galleria/dist/galleria.js"></script>
+    <script src="galleria/dist/themes/classic/galleria.classic.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#images').galleria(
+            width=500,
+            height=500
+        );
+        });
+        </script>
+</head>
+
+<body>
+    <header class="flex">
+        <h1>Formula 1-es világbajnokok</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="vilagbajnokok.html">Világbajnokok</a></li>
+                <li><a href="kviz.html">Kvíz</a></li>
+                <li id="current"><a href="#">Fotók</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="flex">
+
+        <article class="versenyzok">
+            <h1>Fotóalbum</h1>
+        </article>
+
+        <article id="images" class="galleria">
+            <img src="fotoalbum/max_verstappen_1.jpg" alt="Max Verstappen a pályafutása elején"
+                title="Max Verstappen 2016 körül">
+            <img src="fotoalbum/max_verstappen_2.jpg" alt="Max Verstappen nyer" title="Verstappen dominancia">
+            <img src="fotoalbum/lewis_hamilton_1.jpg" alt="Lewis Hamiltonról egy kép" title="Lewis Hamilton">
+            <img src="fotoalbum/2021-es_vb_harcosok.jpg" alt="Kép a 2021-es bajnok aspiránsoról"
+                title="Max Verstappen és Lewis Hamilton harca 2021-ben">
+            <img src="fotoalbum/sebastian_vettel_1.jpg" alt="Vettel a Ferrinál" title="Vettel a Ferrinál">
+            <img src="fotoalbum/sebastian_vettel_2.jpg" alt="Vettel az Aston Martinnál"
+                title="Vettel az Aston Martinnál">
+            <img src="fotoalbum/michael_schumacher_1.jpg" alt="Kép Michael Schumacherről"
+                title="Kép Michael Schumacherről">
+            <img src="fotoalbum/michael_schumacher_1_vbcim.jpg" alt="Schumacher első vb címe a Ferrarival 2000-ben"
+                title="Schumacher első vb címe a Ferrarival 2000-ben">
+        </article>
+
+    </div>
+
+    <footer class="flex">
+        © Csak oktatási célra!<br>
+        Nem az eredeti Formula 1-es weboldal!<br>
+        Készítette: Mikics Tamás
+    </footer>
+
+</body>
+</html>
