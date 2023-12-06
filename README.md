@@ -1,2 +1,16 @@
 # webfejlesztes
 A webfejlesztés tantárgy beadandója
+
+1. Weboldal készítőjének neve: Mikics Tamás György
+
+2. GitHub URL-címe: 
+
+3. A weblapom olyan Formula 1-es világbajnokokról szól, akik az elmúlt 23-24 évben értek el legalább 3 világbajnoki címet. Róluk olvashatnak, tájékozódhatnak a weboldalam látogatói, illetve    résztvehetnek egy (képzeletbeli) nyereményjátékban is.
+
+4. A saját JS kódom a Kvíz nevezetű oldalon található. Összesíti a helyes megoldások számát és a "Küldés" gombra kattintva kiírja egy 'alert' segítségével az összpontszámot. (8 pont érhető el maximum).
+
+5. 'Roboto' Google web fontot használtam. A "header h1", "header", a "h2", az "aside ul a", az "article.leiras h3", a "h3.ismerteto_cimsor", a "h3.teszt", "article.versenyzok h1" tagében alkalmaztam.
+
+6. Körhöcz Bence beadandójából, illetve a Javascript 1 15-ös feladatából inspirálódtam.
+
+7. A szövegek forrását a Wikipédiáról vettem, de a weboldalon oda is van linkelve.
